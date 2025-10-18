@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import FeedbackForm from "./pages/FeedbackForm";
 import AdminDashboard from "./pages/AdminDashboard";
+import QRCodePage from "./pages/QRCodePage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<FeedbackForm />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/" element={<FeedbackForm />} />
       </Routes>
     </Router>
   );
